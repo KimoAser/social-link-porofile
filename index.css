@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "inter";
+    src: url("/fonts/Inter-Regular.ttf") format(truetype);
+}
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h2 {
+    font-size: clamp(0.25rem, -0.375rem + 10vw, 1.5rem);
+}
+h2,h5 {
+    color: white;
+    font-family: "inter";
+    
+}
+h5 {
+    font-size: clamp(0.25rem, 0rem + 4vw, 0.75rem);
+}
+.london {
+    color: yellow;
+    font-family: "inter";
+    font-size: clamp(0.25rem, 0rem + 4vw, 0.75rem);
+}
+.container {
+    background-color:#333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: clamp(0.5rem, -0.69rem + 19.048vw, 3rem);
+    border-radius: 1rem;
+}
+figure {
+    width: 50%;
+}
+img {
+    width: 100%;
+    border-radius: 50%;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+}
+.buttons .row {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #555555;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: background-color 1s, color 1s;
+}
+.buttons .row:hover {
+    background-color: yellow;
+    color: black;
+}
